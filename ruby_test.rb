@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-driver = Selenium::WebDriver.for :chrome
+driver = Selenium::WebDriver.for :firefox
 driver.get "http://google.com"
 
 element = driver.find_element :name => "q"
