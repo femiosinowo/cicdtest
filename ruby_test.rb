@@ -5,7 +5,7 @@ driver = Selenium::WebDriver.for :firefox
 driver.get "http://google.com"
 
 element = driver.find_element :name => "q"
-element.send_keys "Femi Osinowo"
+element.send_keys "Femi+Osinowo"
 element.submit
 
 puts "Page title is #{driver.title}"
